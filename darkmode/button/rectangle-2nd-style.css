@@ -1,0 +1,117 @@
+.tDark, .headIcn, .headIcn >*{
+    font-size:11px;
+    position:relative
+}
+ .tDark:before{
+    content:attr(aria-label);
+    opacity:0;
+     transition:var(--trans-1);
+     white-space:nowrap;
+     position:absolute;
+    right:0
+}
+ .tDark:hover:before{
+    opacity:.7;
+    margin-right:8px;
+    margin-left:8px;
+    right:20px
+}
+ .tDark .svg-02, .drkM .tDark .svg-01{
+    display:none
+}
+ .drkM .tDark .svg-02{
+    display:block
+}
+ .drkM .tDark:before{
+    content:'Light'
+}
+ .tLang{
+    font-size:12px
+}
+ .tLang li:not(:last-child):after{
+    content:'';
+    display:block;
+     border-left:1px solid #999;
+    margin:0 10px;
+    opacity:.7;
+     flex:0 0
+}
+ .tLang span, .tSocial span{
+    opacity:.5
+}
+ .tLang a:hover{
+    color:var(--linkC)
+}
+ .tLang .a:before{
+    content:attr(data-text)
+}
+ .tSocial li:not(:last-child):after{
+    content:'';
+    display:block;
+    margin:0 2.5px;
+    flex:0 0
+}
+ .tSocial .a{
+    align-items:center;
+    padding:2px
+}
+ .tSocial svg, .tDark svg{
+    width:20px;
+    height:20px;
+     opacity:.8
+}
+ .tSocial a:hover svg{
+    fill:var(--linkC);
+    opacity:1
+}
+ .tSocial a:hover svg.line{
+    fill:none;
+    stroke:var(--linkC)
+}
+ .BlogSearch.widget form{
+    position:relative
+}
+ .BlogSearch.widget input{
+    min-width:200px;
+    outline:0;
+    border:var(--srchBo) solid var(--srchBoc);
+    border-radius:25px;
+     background:var(--srchBg);
+     padding:8px 36px;
+     font-size:13px
+}
+ .BlogSearch .searchB{
+    background:transparent;
+    border:0;
+    outline:0;
+    padding:0;
+    position:absolute;
+    left:10px;
+    top:0;
+    display:flex;
+    align-items:center;
+    height:100%
+}
+ .BlogSearch .searchB svg{
+    width:18px;
+    height:18px;
+     transition:var(--trans-2);
+     stroke:var(--srchI)
+}
+ .navHome{
+    display:inline-flex;
+    align-items:center
+}
+ .navHome svg{
+    width:22px;
+    height:22px;
+    margin-right:10px
+}
+ .tutB{
+    margin-left:15px
+}
+ .tutB .button{
+    margin:0;
+    font-size:13px;
+    padding:8px 15px
+}
